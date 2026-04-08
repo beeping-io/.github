@@ -1,0 +1,21 @@
+# Org-level fallback issue template config.
+# Repos that don't override this with their own config will inherit it.
+# Docs: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/orgs/beeping-io/discussions
+    about: Ask questions, share ideas, and discuss with the community.
+  - name: 📚 Documentation
+    url: https://docs.beeping.io
+    about: Read the docs (cookbooks, quickstarts, API reference) before opening an issue.
+  - name: 🛡️ Security vulnerability
+    url: https://github.com/beeping-io/.github/security/advisories/new
+    about: Report a security vulnerability privately. See SECURITY.md.
+  - name: 🌐 Beeping Platform website
+    url: https://beeping.io
+    about: Learn about the Beeping Platform.
+  - name: 🚦 Status page
+    url: https://status.beeping.io
+    about: Check the current status of all Beeping cloud services.
