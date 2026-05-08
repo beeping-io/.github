@@ -23,6 +23,14 @@ Built for developers, by developers. **Cloud + Local mode** in every SDK. **18 r
 
 ---
 
+## 🎮 Try it — the First Beep quest
+
+Don't read; play. The **First Beep quest** walks you through encoding a payload, dropping the ultrasound on a Mac, and watching it decode on a phone — all in your browser, in 5 minutes. No install.
+
+→ **[Take the quest at beeping.io](https://beeping.io/quest/first-beep)**
+
+---
+
 ## 🚀 Get started in 5 minutes
 
 ```bash
