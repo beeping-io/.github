@@ -1,0 +1,80 @@
+# Org-level fallback bug-report form. Repos that don't ship their own
+# version of this file will inherit it via GitHub's `.github` defaults.
+name: 🐛 Bug report
+description: Something is broken in a Beeping component. File this if you can reproduce it.
+title: "[bug]: <one-line summary>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. A quick read of the
+        [Code of Conduct](https://github.com/beeping-io/.github/blob/main/CODE_OF_CONDUCT.md)
+        keeps the community welcoming.
+
+        **Found a security vulnerability?** Please do **NOT** file it here —
+        use the [private security advisory form](https://github.com/beeping-io/.github/security/advisories/new) instead.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which Beeping component?
+      options:
+        - beeping-core (C++ engine)
+        - beepbox (HTTP API)
+        - beeping-android (Kotlin SDK)
+        - beeping-ios (Swift SDK)
+        - beeping-www (beeping.io website)
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Component version, commit SHA, or "N/A" if unknown.
+      placeholder: "e.g. 0.0.7  ·  main@abc123  ·  N/A"
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: One short paragraph describing the broken behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimum sequence we can copy/paste to see the same bug.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, browser, device, mic/speaker setup if audio-related.
+      placeholder: |
+        - OS: macOS 14.2
+        - Device: iPhone 15
+        - Mic: built-in
+        - Other:
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / stack trace
+      render: shell
+    validations:
+      required: false

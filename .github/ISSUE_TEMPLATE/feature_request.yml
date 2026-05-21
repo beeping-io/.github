@@ -1,0 +1,54 @@
+# Org-level fallback feature-request form. Repos that don't ship their
+# own version of this file will inherit it via GitHub's `.github` defaults.
+name: ✨ Feature request
+description: Propose a new feature or improvement you'd like to see implemented.
+title: "[feature]: <one-line summary>"
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For open-ended ideas or early-stage exploration, please use
+        [💡 Ideas in GitHub Discussions](https://github.com/orgs/beeping-io/discussions/categories/ideas)
+        instead — Issues are best for proposals concrete enough to ship.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which Beeping component?
+      options:
+        - beeping-core (C++ engine)
+        - beepbox (HTTP API)
+        - beeping-android (Kotlin SDK)
+        - beeping-ios (Swift SDK)
+        - beeping-www (beeping.io website)
+        - Cross-cutting / multiple components
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does this solve? Who feels the pain today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed solution
+      description: Rough API or behavior sketch is enough — we'll iterate.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you weigh and why not those?
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Links, prior art, mock-ups, constraints, willingness to contribute the PR.
+    validations:
+      required: false
