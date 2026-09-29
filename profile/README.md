@@ -31,6 +31,37 @@ Apache 2.0 across the platform.
 
 ---
 
+## 🗺️ Market Roadmap & Ecosystem Validation Status
+
+The Beeping ecosystem follows a rigorous Scientific Lean Validation framework (**E0 to E5**). Transition between stages is governed strictly by empirical quantitative Bayesian gates.
+
+| Stage | Market Focus | Status | Progress | Remaining Work | Validation Gate |
+|---|---|---|---|---|---|
+| **E0** | **Problem Discovery** | ✅ Validated | `▓▓▓▓▓▓▓▓▓▓` 100% | 0 tasks | $N=5$ Blind problem interviews |
+| **E1** | **Technical Feasibility (MVP)** | 🔄 In Progress | `▓▓▓▓▓░░░░░` 52% | 81 tasks (161 SP) | $p_0=1.00$ Physical hardware canary |
+| **E2** | **Retention & Usability** | ⏳ Queued | `░░░░░░░░░░` 0% | 46 tasks (91 SP) | $p_0 \ge 0.60$ Unprompted return rate |
+| **E3** | **Product-Market Fit** | ⏳ Queued | `░░░░░░░░░░` 0% | 170 tasks (322 SP) | $p_0 \ge 0.70$ External resource commitment |
+| **E4** | **Channel & Growth** | ⏳ Queued | `░░░░░░░░░░` 0% | 67 tasks (131 SP) | $p_0 \ge 0.75$ Repeatable acquisition |
+| **E5** | **Institutional Scale** | ⏳ Queued | `░░░░░░░░░░` 0% | 3 tasks (4 SP) | Proven unit economics |
+
+### 🔬 Active Stage: `E1 · Technical Feasibility` Breakdown
+
+| Milestone | Deliverable | Status |
+|---|---|---|
+| `E1 · 🧰 Dev Environment & Toolchains` | macOS workstation toolchains (Rust, Flutter, Conan, NDK) | ✅ Completed (28 SP) |
+| `E1 · 🪜 Governance & Methodology` | Architectural rules, backlog triage, and Git hooks | ✅ Completed (32 SP) |
+| `E1 · ✍️ Core Specs & Foundations` | Vision, Mission, P&L model, and Subprocessors register | ✅ Completed (13 SP) |
+| `E1 · 🧱 Core DSP: C++20 Stability & Versioning` | Reed-Solomon overflow fix, ambient noise gate & dynamic versioning | 🔄 Active (7 SP) |
+| `E1 · 🍎🤖 Native SDKs: iOS (Swift 6) & Android (Kotlin 2.0)` | Swift 6 actor concurrency, Kotlin 2.0/NDK r28 & 9-char cable | ⏳ Queued (9 SP) |
+| `E1 · 🔌 Federated Flutter Plugin: Acoustic & Cloud` | Federated packages linking native iOS/Android engines | ⏳ Queued (22 SP) |
+| `E1 · 📱 Flagship App: BeepDrop (Flutter)` | Ultrasonic P2P file & text sharing app with reactive logo vumeter | ⏳ Queued (21 SP) |
+| `E1 · 🍎🤖 Native Sample Apps (SwiftUI & Compose)` | Standalone sample apps validating independent native SDKs | ⏳ Queued (8 SP) |
+| `E1 · 🚀 SDK Distribution (CocoaPods, Maven, pub.dev)` | Production registry publication | ⏳ Queued (4 SP) |
+| `E1 · 🌐 Web Portal & Ultrasonic Web Mixer` | `beeping.io` production deployment with WASM v0.8.1 & audio watermarking | ⏳ Queued (9 SP) |
+| `E1 · 🎮 Web Playcenter: Acoustic Laboratories` | 35 browser-based acoustic labs (FFT Spectrogram, BER tester) | ⏳ Queued (77 SP) |
+
+---
+
 ## Get involved
 
 - 💬 [**Discussions**](https://github.com/beeping-io/.github/discussions) — ideas, Q&A, show-and-tell. Every category is readable without an account.
